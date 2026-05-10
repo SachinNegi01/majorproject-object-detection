@@ -15,7 +15,7 @@ run = st.checkbox("Start Camera")
 
 FRAME_WINDOW = st.image([])
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture()
 
 while run:
     ret, frame = cap.read()
